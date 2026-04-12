@@ -35,21 +35,26 @@ export default function Home() {
         },
         {
             id: 5,
+            question: "Can you register wills within the DIFC Wills and Probate Registry?",
+            answer: "Yes, Adv. Bindu is one of the very few and oldest Indian lawyers registered as a Will Draftsman with the DIFC Wills and Probate Registry. Our team is fully equipped to assist with the drafting, registration, and overall management of wills within the DIFC framework, ensuring your assets and interests are protected in accordance with the applicable laws."
+        },
+        {
+            id: 6,
             question: "Can you assist with business setup and corporate structuring in UAE?",
             answer: "Absolutely. We assist with company establishment across mainland UAE, free zones, and offshore entities. Our services include corporate structuring, compliance advisory, and cross-border transaction support to ensure seamless business operations."
         },
         {
-            id: 6,
+            id: 7,
             question: "Do you provide pro bono legal services?",
             answer: "Yes, since 2002, Advocate Bindu S. Chettur has provided pro-bono legal counsel to distressed expatriate Indians as a panel lawyer. She currently serves as the senior-most panel lawyer at Pravasi Bharatiya Sahaya Kendra (PBSK), operating under India's Ministry of External Affairs."
         },
         {
-            id: 7,
+            id: 8,
             question: "What is your approach to dispute resolution?",
             answer: "We offer comprehensive dispute resolution services including litigation, mediation, and arbitration. As appointed arbitrators with DIAC, DIFC-LCIA, and LCIA, we tailor our approach to each case, always aiming for the most effective and efficient resolution for our clients."
         },
         {
-            id: 8,
+            id: 9,
             question: "How can I schedule a consultation?",
             answer: "You can schedule a consultation by calling us at +971 54 477 8569, emailing advocatebschettur@gmail.com, or by filling out the contact form on our website. Our office hours are Monday to Friday, 9:00 AM to 5:00 PM. We are located at #301, Al Serkal 2, Port Saeed Road, Deira, Dubai."
         }
