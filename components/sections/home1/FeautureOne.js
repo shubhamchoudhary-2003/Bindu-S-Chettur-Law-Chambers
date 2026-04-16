@@ -7,8 +7,8 @@ export default function FeautureOne() {
   // State for dynamic data (e.g., dynamic images, text, links)
   const [featureContent, setFeatureContent] = useState({
     patternImage: "/assets/img/pattern/feauture-v1-pattern.png",
-    sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
-    sectionTitleText: "Bindu S. Chettur Law Chambers",
+    // sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
+    // sectionTitleText: "Bindu S. Chettur Law Chambers",
     sectionMainTitle: "why clients trust us",
     features: [
       {

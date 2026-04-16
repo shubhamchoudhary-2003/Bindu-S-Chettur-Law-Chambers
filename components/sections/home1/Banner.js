@@ -30,13 +30,13 @@ export default function Banner() {
     <>
       {/* Start Banner One */}
       <section className="banner-one">
-        <div className="banner-one__img" style={{ minHeight: '720px' }}>
+        <div className="banner-one__img" style={{ minHeight: "720px" }}>
           <div
             className="banner-one__img-bg"
             style={{ backgroundImage: `url(${bannerContent.bannerImage})` }}
           ></div>
         </div>
-        <div className="banner-one__content">
+        {/* <div className="banner-one__content">
           <div className="banner-one__social-links">
             <div className="banner-one__social-links-inner">
               {bannerContent.socialLinks.map((link, index) => (
@@ -67,7 +67,7 @@ export default function Banner() {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </section>
       {/* End Banner One */}
     </>

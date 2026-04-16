@@ -108,7 +108,7 @@ export default function Testimonial({
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
-                                                    background: '#fff',
+                                                    background: testimonial.image.includes('automerch') ? '#0a1e4a' : '#fff',
                                                 }}
                                             >
                                                 <img
