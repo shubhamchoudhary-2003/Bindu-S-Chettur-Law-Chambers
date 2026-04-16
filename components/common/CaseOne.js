@@ -1,44 +1,23 @@
-"use client"; // This directive makes sure the component runs on the client side
+"use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
+import { successStories } from "@/data/successStories";
 
 export default function CaseOne() {
-  const [cases, setCases] = useState([
-    {
-      delay: ".1s",
-      subTitleImg: "/assets/img/icon/sec-title-img1.png",
-      subTitleText: "latest case studies",
-      title: "recent case studies showcase for our happy victim",
-      imgSrc: "/assets/img/project/case-v1-img1.jpg",
-      category: "business / public",
-      caseTitle: "public company case",
-      caseLink: "/case-details",
-    },
-    {
-      delay: ".2s",
-      imgSrc: "/assets/img/project/case-v1-img2.jpg",
-      category: "Family / domestic",
-      caseTitle: "Family violence case",
-      caseLink: "/case-details",
-    },
-    {
-      delay: ".3s",
-      imgSrc: "/assets/img/project/case-v1-img3.jpg",
-      category: "corporate / tax",
-      caseTitle: "business tax consultancy",
-      caseLink: "/case-details",
-      buttonText: "all project",
-      buttonLink: "/case",
-    },
-    {
-      delay: ".4s",
-      imgSrc: "/assets/img/project/case-v1-img4.jpg",
-      category: "Family / domestic",
-      caseTitle: "marriage agreement",
-      caseLink: "/case-details",
-    },
-  ]);
+  const cases = successStories.map((story, index) => ({
+    delay: `.${(index % 4) + 1}s`,
+    subTitleImg: index === 0 ? "/assets/img/icon/sec-title-img1.png" : undefined,
+    subTitleText: index === 0 ? "success stories" : undefined,
+    title:
+      index === 0
+        ? "landmark victories across jurisdictions"
+        : undefined,
+    imgSrc: story.image,
+    category: story.category,
+    caseTitle: story.title,
+    caseLink: `/case-details/${story.slug}`,
+  }));
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -73,7 +52,6 @@ export default function CaseOne() {
           });
         });
 
-        // Dynamic filter counter logic
         const activeFilterItem = postFilter.querySelectorAll("li");
         activeFilterItem.forEach((item) => {
           const filterElement = item.getAttribute("data-filter");
@@ -107,46 +85,21 @@ export default function CaseOne() {
                           <p>{caseItem.subTitleText}</p>
                         </div>
                       </div>
-                      <h2 className="">{caseItem.title.split(" <br>").map((text, i) => (
-                        <span key={i}>
-                          {text}
-                          <br />
-                        </span>
-                      ))}
+                      <h2 className="">
+                        {caseItem.title.split(" <br>").map((text, i) => (
+                          <span key={i}>
+                            {text}
+                            <br />
+                          </span>
+                        ))}
                       </h2>
                     </div>
                   )}
-                  <div className="case-one__single-img">
-                    <div className="inner">
-                      <img src={caseItem.imgSrc} alt={caseItem.caseTitle} />
-                      <div className="overlay-icon">
-                        <Link href={caseItem.caseLink}>
-                          <span className="icon-icon-8"></span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
                   <div className="case-one__single-content">
                     <p>{caseItem.category}</p>
                     <h2>
                       <Link href={caseItem.caseLink}>{caseItem.caseTitle}</Link>
                     </h2>
-                    {caseItem.buttonText && (
-                      <div className="btn-box">
-                        <Link className="thm-btn" href={caseItem.buttonLink}>
-                          {caseItem.buttonText}
-                          <span className="thm-btn__icon">
-                            <i className="icon-icon-8"></i>
-                          </span>
-                          <span className="thm-btn__hover-group">
-                            <span className="thm-btn__hover thm-btn__hover--1"></span>
-                            <span className="thm-btn__hover thm-btn__hover--2"></span>
-                            <span className="thm-btn__hover thm-btn__hover--3"></span>
-                            <span className="thm-btn__hover thm-btn__hover--4"></span>
-                          </span>
-                        </Link>
-                      </div>
-                    )}
                   </div>
                 </div>
               </div>

@@ -7,30 +7,12 @@ import "swiper/css"; // Import Swiper styles
 export default function Brand() {
   // State for dynamic data (e.g., dynamic images)
   const [brands, setBrands] = useState([
-    {
-      img1: "/assets/img/brand/brand-v1-img1.png",
-      img2: "/assets/img/brand/brand-v1-img6.png",
-    },
-    {
-      img1: "/assets/img/brand/brand-v1-img2.png",
-      img2: "/assets/img/brand/brand-v1-img7.png",
-    },
-    {
-      img1: "/assets/img/brand/brand-v1-img3.png",
-      img2: "/assets/img/brand/brand-v1-img8.png",
-    },
-    {
-      img1: "/assets/img/brand/brand-v1-img4.png",
-      img2: "/assets/img/brand/brand-v1-img9.png",
-    },
-    {
-      img1: "/assets/img/brand/brand-v1-img5.png",
-      img2: "/assets/img/brand/brand-v1-img10.png",
-    },
-    {
-      img1: "/assets/img/brand/brand-v1-img1.png",
-      img2: "/assets/img/brand/brand-v1-img6.png",
-    },
+    { img1: "/client/PRIME LOGO (1).jpg", img2: "/client/PRIME LOGO (1).jpg" },
+    { img1: "/client/automerch.jpg", img2: "/client/automerch.jpg" },
+    { img1: "/client/lamer.webp", img2: "/client/lamer.webp" },
+    { img1: "/client/stanley-logo (1).jpg", img2: "/client/stanley-logo (1).jpg" },
+    { img1: "/client/PRIME LOGO (1).jpg", img2: "/client/PRIME LOGO (1).jpg" },
+    { img1: "/client/automerch.jpg", img2: "/client/automerch.jpg" },
   ]);
 
   return (
@@ -53,11 +35,47 @@ export default function Brand() {
           >
             {brands.map((brand, index) => (
               <SwiperSlide key={index}>
-                <div className="img-box">
-                  <img src={brand.img1} alt={`Brand ${index + 1} Image 1`} />
+                <div
+                  className="img-box"
+                  style={{
+                    height: "120px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <img
+                    src={brand.img1}
+                    alt={`Brand ${index + 1} Image 1`}
+                    style={{
+                      maxHeight: "100%",
+                      maxWidth: "160px",
+                      width: "auto",
+                      height: "auto",
+                      objectFit: "contain",
+                    }}
+                  />
                 </div>
-                <div className="img-box2">
-                  <img src={brand.img2} alt={`Brand ${index + 1} Image 2`} />
+                <div
+                  className="img-box2"
+                  style={{
+                    height: "120px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <img
+                    src={brand.img2}
+                    alt={`Brand ${index + 1} Image 2`}
+                    style={{
+                      maxHeight: "100%",
+                      maxWidth: "160px",
+                      width: "auto",
+                      height: "auto",
+                      objectFit: "contain",
+                    }}
+                  />
                 </div>
               </SwiperSlide>
             ))}
