@@ -72,19 +72,16 @@ export default function Footer1() {
                     <div className="logo-box">
                       <Link href="/">
                         <img
-                          src="/assets/img/resource/logo-2.png"
+                          src="/client/BSC Law Chambers Logo Draft.png"
                           alt="Bindu S. Chettur Law Chambers"
-                          style={{ maxHeight: "60px", width: "auto" }}
+                          style={{ maxHeight: "220px", width: "auto" }}
                         />
                       </Link>
                     </div>
 
                     <div className="footer-widget__about-inner">
                       <div className="text-box1">
-                        <p>
-                          Comprehensive Corporate Advisory <br /> and Legal
-                          Support across UAE & India.
-                        </p>
+                        <p>TRUSTED LEGAL PARTNER</p>
                       </div>
 
                       <div className="text-box2">
@@ -124,36 +121,10 @@ export default function Footer1() {
                           </p>
                           <p className="text2">
                             <a href="mailto:advocatebschettur@gmail.com">
-                              advocatebschettur@gmail.com
+                              contact@chanakyatse.com
                             </a>
                           </p>
                         </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                {/* End Single Footer Widget */}
-
-                {/* Start Single Footer Widget */}
-                <div
-                  className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <div className="single-footer-widget footer-widget__service">
-                    <div className="title">
-                      <h2>Practice Areas</h2>
-                    </div>
-
-                    <div className="footer-widget__service-box">
-                      <ul>
-                        {services.map((service, index) => (
-                          <li key={index}>
-                            <Link href={service.href}>
-                              <span className={`icon-icon-501`}></span>
-                              {service.text}
-                            </Link>
-                          </li>
-                        ))}
                       </ul>
                     </div>
                   </div>

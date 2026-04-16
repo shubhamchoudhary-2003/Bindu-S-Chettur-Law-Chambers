@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const testimonials = [
   {
@@ -45,8 +45,8 @@ const testimonials = [
   },
 ];
 
-const formBackgroundImage = "/assets/img/shape/testimonials-v1-shape1.png";  // Replace with the actual path to your background image
-const formActionUrl = "/submit-form";  // Replace with your actual form action URL
+const formBackgroundImage = "/assets/img/shape/testimonials-v1-shape1.png"; // Replace with the actual path to your background image
+const formActionUrl = "/submit-form"; // Replace with your actual form action URL
 
 export default function Testimonial() {
   const [formData, setFormData] = useState({
@@ -65,7 +65,7 @@ export default function Testimonial() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
@@ -78,18 +78,28 @@ export default function Testimonial() {
         <div className="container">
           <div className="row">
             {/* Start Testimonials One Form */}
-            <div className="col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div
+              className="col-xl-4 wow fadeInLeft"
+              data-wow-delay="0ms"
+              data-wow-duration="1500ms"
+            >
               <div className="testimonials-one__form">
                 <div
                   className="testimonials-one__form-bg"
                   style={{ backgroundImage: `url(${formBackgroundImage})` }}
                 ></div>
                 <div className="title-box">
-                  <h2>Free Appointment</h2>
+                  <h2>Schedule An Appointment</h2>
                 </div>
-                <form method="post" action={formActionUrl} onSubmit={handleSubmit}>
+                <form
+                  method="post"
+                  action={formActionUrl}
+                  onSubmit={handleSubmit}
+                >
                   <div className="form-group">
-                    <div className="icon-box"><span className="icon-icon-17"></span></div>
+                    <div className="icon-box">
+                      <span className="icon-icon-17"></span>
+                    </div>
                     <input
                       type="text"
                       name="username"
@@ -100,7 +110,9 @@ export default function Testimonial() {
                     />
                   </div>
                   <div className="form-group">
-                    <div className="icon-box"><span className="icon-icon-18"></span></div>
+                    <div className="icon-box">
+                      <span className="icon-icon-18"></span>
+                    </div>
                     <input
                       type="email"
                       placeholder="YOUR EMAIL*"
@@ -120,14 +132,20 @@ export default function Testimonial() {
                       >
                         <option value="YOUR QUERY*">YOUR QUERY*</option>
                         <option value="DIFC Services">DIFC Services</option>
-                        <option value="Commercial & Corporate">Commercial & Corporate</option>
+                        <option value="Commercial & Corporate">
+                          Commercial & Corporate
+                        </option>
                         <option value="Arbitration">Arbitration</option>
-                        <option value="Employment & Labor">Employment & Labor</option>
+                        <option value="Employment & Labor">
+                          Employment & Labor
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div className="form-group">
-                    <div className="icon-box"><span className="icon-icon-19"></span></div>
+                    <div className="icon-box">
+                      <span className="icon-icon-19"></span>
+                    </div>
                     <textarea
                       name="message"
                       placeholder="MESSAGE HERE*"
@@ -139,7 +157,11 @@ export default function Testimonial() {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="button-box">
-                        <button className="thm-btn" type="submit" data-loading-text="Please wait...">
+                        <button
+                          className="thm-btn"
+                          type="submit"
+                          data-loading-text="Please wait..."
+                        >
                           Send Request
                           <span className="thm-btn__icon">
                             <i className="icon-icon-8"></i>
@@ -165,7 +187,10 @@ export default function Testimonial() {
                 <div className="sec-title text-center">
                   <div className="sub-title center">
                     <div className="icon">
-                      <img src="assets/img/icon/sec-title-img1.png" alt="Icon" />
+                      <img
+                        src="assets/img/icon/sec-title-img1.png"
+                        alt="Icon"
+                      />
                     </div>
                     <div className="text">
                       <p>Our Testimonials</p>

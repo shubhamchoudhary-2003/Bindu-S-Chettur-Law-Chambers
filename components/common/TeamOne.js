@@ -22,8 +22,26 @@ export default function TeamOne({ teamData, sectionTitle, subTitle, className })
               <div className="team-one__single text-center">
                 <div className="team-one__single-img">
                   <div className="round-box"></div>
-                  <div className="inner">
-                    <img src={member.image} alt={member.name} />
+                  <div
+                    className="inner"
+                    style={{
+                      width: '310px',
+                      height: '430px',
+                      margin: '0 auto',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center top',
+                        display: 'block',
+                      }}
+                    />
                   </div>
                 </div>
                 <div className="team-one__single-content">

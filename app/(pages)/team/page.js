@@ -46,9 +46,9 @@ export default function Home() {
                 ],
               },
               {
-                name: "Ashwin Chaturvedi",
+                name: "Adv. Ashwin Chaturvedi",
                 position: "Lawyer & Head of Business Strategy",
-                image: "/assets/img/team/team-v1-img2.png",
+                image: "/client/Ashwin Professional Photo.jpg",
                 social: [
                   { url: "#", iconClass: "icon-icon-4" },
                   { url: "#", iconClass: "icon-icon-3" },
