@@ -6,27 +6,30 @@ import { useState } from "react";
 export default function ServicesOne() {
   // State for dynamic data (e.g., dynamic images, text, links)
   const [servicesContent, setServicesContent] = useState({
-    backgroundImage: "/assets/img/background/services-v1-bg.jpg",
+    // backgroundImage: "/assets/img/background/services-v1-bg.jpg",
     sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
-    sectionTitleText: "our practice areas",
-    sectionMainTitle: "Comprehensive legal and business solutions",
+    sectionTitleText: "our Services",
+    // sectionMainTitle: "Comprehensive legal and business solutions",
     services: [
       {
         id: 1,
         title: "DIFC Services",
-        description: "Specialized Dubai International Financial Centre guidance",
+        description:
+          "Specialized Dubai International Financial Centre guidance",
         link: "criminal-case",
       },
       {
         id: 2,
         title: "Commercial & Corporate",
-        description: "Company establishment, free zones, cross-border transactions",
+        description:
+          "Company establishment, free zones, cross-border transactions",
         link: "family-violence",
       },
       {
         id: 3,
         title: "Arbitration",
-        description: "Commercial institutional arbitrations, DIAC/DIFC-LCIA procedures",
+        description:
+          "Commercial institutional arbitrations, DIAC/DIFC-LCIA procedures",
         link: "business-law",
       },
       {
@@ -42,21 +45,24 @@ export default function ServicesOne() {
     <>
       {/* Start Services One */}
       <section className="services-one">
-        <div
+        {/* <div
           className="services-one__bg wow fadeInRight"
           data-wow-delay="0ms"
           data-wow-duration="1500ms"
           style={{ backgroundImage: `url(${servicesContent.backgroundImage})` }}
-        ></div>
+        ></div>*/}
         <div className="container">
           <div className="services-one__content">
             <div className="sec-title">
               <div className="sub-title">
                 <div className="icon">
-                  <img src={servicesContent.sectionTitleIcon} alt="Section Icon" />
+                  <img
+                    src={servicesContent.sectionTitleIcon}
+                    alt="Section Icon"
+                  />
                 </div>
                 <div className="text">
-                  <p>{servicesContent.sectionTitleText}</p>
+                  <p style={{ fontSize: '28px', fontWeight: 600 }}>{servicesContent.sectionTitleText}</p>
                 </div>
               </div>
               <h2>{servicesContent.sectionMainTitle}</h2>
