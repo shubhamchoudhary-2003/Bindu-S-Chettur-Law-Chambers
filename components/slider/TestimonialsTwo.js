@@ -9,24 +9,43 @@ import { Navigation, Autoplay } from 'swiper/modules';
 // Default data for testimonials
 const testimonialsData = [
     {
-        image: '/assets/img/testimonial/testimonials-v2-img1.jpg',
-        feedback: 'Advocate Bindu S. Chettur provided exceptional legal guidance during our complex cross-border corporate dispute. Her deep understanding of both UAE and Indian law was invaluable.',
-        clientName: 'Rajesh Kumar',
-        caseType: 'corporate law case',
+        image: '/client/lamer.webp',
+        feedback:
+            'Their legal structuring and compliance expertise have been instrumental in enabling us to execute our investment strategies seamlessly while staying fully aligned with applicable regulations.',
+        clientName: 'Lamer Capital Limited',
+        caseType: 'Investment & Compliance',
         rating: 5,
     },
     {
-        image: '/assets/img/testimonial/testimonials-v2-img2.jpg',
-        feedback: 'Outstanding representation in our DIFC matter. The team expertise in commercial arbitration and their dedication to achieving the best outcome was truly remarkable.',
-        clientName: 'Sarah Al Maktoum',
-        caseType: 'DIFC services',
+        image: '/client/stanley-logo (1).jpg',
+        feedback:
+            'We rely on their ongoing corporate, regulatory, and intellectual property advisory to support our regional expansion and ensure operational compliance across markets.',
+        clientName: 'Stanley Group (Stanley Lubricants)',
+        caseType: 'Corporate & IP Advisory',
         rating: 5,
     },
     {
-        image: '/assets/img/testimonial/testimonials-v2-img3.jpg',
-        feedback: 'We engaged the firm for employment law matters across multiple UAE free zones. Their knowledge of labor compliance and proactive approach saved us significant time and resources.',
-        clientName: 'Amit Sharma',
-        caseType: 'employment & labor',
+        image: '/client/PRIME LOGO (1).jpg',
+        feedback:
+            'Their team has consistently delivered comprehensive legal documentation and regulatory guidance, along with strong IP compliance support across our business operations.',
+        clientName: 'Prime Petroleum Group',
+        caseType: 'Regulatory & IP Compliance',
+        rating: 5,
+    },
+    {
+        image: '/client/automerch.jpg',
+        feedback:
+            'They played a key role in structuring our contracts and mitigating risks in complex engineering and infrastructure projects, providing us with clarity and confidence.',
+        clientName: 'Automech Group of Companies',
+        caseType: 'Contracts & Risk Advisory',
+        rating: 5,
+    },
+    {
+        image: '/assets/img/icon/sec-title-img1.png',
+        feedback:
+            'Their end-to-end legal advisory, spanning documentation, compliance, and intellectual property, has been critical in supporting our business objectives.',
+        clientName: 'Henkel International Lubricant Industry',
+        caseType: 'End-to-End Legal Advisory',
         rating: 5,
     },
 ];
@@ -83,8 +102,26 @@ export default function Testimonial({
                                     <div className="testimonials-two__thumb-single">
                                         <div className="testimonials-two__thumb-img">
                                             <div className="round-box"></div>
-                                            <div className="inner">
-                                                <img src={testimonial.image} alt={testimonial.clientName} />
+                                            <div
+                                                className="inner"
+                                                style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    background: '#fff',
+                                                }}
+                                            >
+                                                <img
+                                                    src={testimonial.image}
+                                                    alt={testimonial.clientName}
+                                                    style={{
+                                                        maxWidth: '70%',
+                                                        maxHeight: '70%',
+                                                        width: 'auto',
+                                                        height: 'auto',
+                                                        objectFit: 'contain',
+                                                    }}
+                                                />
                                             </div>
                                         </div>
                                     </div>

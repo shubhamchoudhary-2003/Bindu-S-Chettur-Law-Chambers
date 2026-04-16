@@ -10,21 +10,38 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const testimonials = [
   {
     rating: 5,
-    feedback: "Advocate Bindu S. Chettur provided exceptional legal guidance during our complex cross-border corporate dispute. Her deep understanding of both UAE and Indian law was invaluable to our case.",
-    author: "Rajesh Kumar",
-    caseType: "Corporate Law",
+    feedback:
+      "Their legal structuring and compliance expertise have been instrumental in enabling us to execute our investment strategies seamlessly while staying fully aligned with applicable regulations.",
+    author: "Lamer Capital Limited",
+    caseType: "Investment & Compliance",
   },
   {
     rating: 5,
-    feedback: "Outstanding representation in our DIFC matter. The team's expertise in commercial arbitration and their dedication to achieving the best outcome was truly remarkable.",
-    author: "Sarah Al Maktoum",
-    caseType: "DIFC Services",
+    feedback:
+      "We rely on their ongoing corporate, regulatory, and intellectual property advisory to support our regional expansion and ensure operational compliance across markets.",
+    author: "Stanley Group (Stanley Lubricants)",
+    caseType: "Corporate & IP Advisory",
   },
   {
     rating: 5,
-    feedback: "We engaged the firm for employment law matters across multiple UAE free zones. Their knowledge of labor compliance and proactive approach saved us significant time and resources.",
-    author: "Amit Sharma",
-    caseType: "Employment & Labor",
+    feedback:
+      "Their team has consistently delivered comprehensive legal documentation and regulatory guidance, along with strong IP compliance support across our business operations.",
+    author: "Prime Petroleum Group",
+    caseType: "Regulatory & IP Compliance",
+  },
+  {
+    rating: 5,
+    feedback:
+      "They played a key role in structuring our contracts and mitigating risks in complex engineering and infrastructure projects, providing us with clarity and confidence.",
+    author: "Automech Group of Companies",
+    caseType: "Contracts & Risk Advisory",
+  },
+  {
+    rating: 5,
+    feedback:
+      "Their end-to-end legal advisory, spanning documentation, compliance, and intellectual property, has been critical in supporting our business objectives.",
+    author: "Henkel International Lubricant Industry",
+    caseType: "End-to-End Legal Advisory",
   },
 ];
 
